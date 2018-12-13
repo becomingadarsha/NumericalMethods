@@ -3,12 +3,13 @@
 #include<math.h>
 
 #define E 0.05
-#define f(x) ((x*x*x) + (x) - 3)
+#define f(x) ((x*x*x) + ((x*x,2)) - 1)
+
 int main(void)
 {
 	
 	int count=0;
-	float xm,x1,x2,f0,f1,f2;
+	float xm,x1,x2,f0,f1,f2,error;
 
 	printf("Enter the value of Xu: ");
 	scanf("%f",&x1);
@@ -19,7 +20,7 @@ int main(void)
 	f2=f(x2);
 
 	if(f1*f2>0){
-         printf("Root doesn't exits between Xl and Xu");
+         printf("Root doesn't exits between Xl and Xu\n");
     }
 
 	else{
@@ -37,13 +38,14 @@ int main(void)
 				f1=f0;
 			}
 
-			if(fabs((x2-x1)/x1)<E){
+            error =fabs((x2-x1)/x1);
+			if(error<E){
 
 				xm=(x1+x2)/2;
                 printf("\n Iteration Steps = %d",count);
 				printf("\n Root = %f",xm);
 				printf("\n Functional Value = %f",f0);
-                printf("\n Error = %f ",fabs(x2-x1)/x1);
+                printf("\n Error = %f ",error);
 			}
 
 			else{

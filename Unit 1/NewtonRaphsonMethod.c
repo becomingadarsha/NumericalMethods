@@ -27,6 +27,7 @@ int main(void){
     if(error<E){
          printf("\n Root of the equation is: %f",x1);
           printf("\n Error: %f ",error);
+          printf("\nIteration Steps: %d",count);
     }
 
     else{
