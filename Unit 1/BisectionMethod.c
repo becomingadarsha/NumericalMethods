@@ -3,7 +3,11 @@
 #include<math.h>
 
 #define E 0.05
+<<<<<<< HEAD
 #define f(x) ((x*x*x) + ((x*x,2)) - 1)
+=======
+#define f(x) ((x*x*x) + (pow(x,2)) - 1)
+>>>>>>> adce4cea88779fc7bb88088771809025b9353b21
 
 int main(void)
 {
