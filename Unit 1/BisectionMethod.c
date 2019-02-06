@@ -3,15 +3,12 @@
 #include<math.h>
 
 #define E 0.05
-<<<<<<< HEAD
+
 #define f(x) ((x*x*x) + ((x*x,2)) - 1)
-=======
-#define f(x) ((x*x*x) + (pow(x,2)) - 1)
->>>>>>> adce4cea88779fc7bb88088771809025b9353b21
 
 int main(void)
 {
-	
+
 	int count=0;
 	float xm,x1,x2,f0,f1,f2,error;
 
@@ -32,11 +29,11 @@ int main(void)
 				count++;
 			xm=(x1+x2)/2;
 			f0=f(xm);
-			
+
 			if((f1*f0)<0){
                 x2=xm;
             }
-				
+
 			else{
 				x1=xm;
 				f1=f0;
@@ -53,10 +50,10 @@ int main(void)
 			}
 
 			else{
-				
+
 				goto start;
 			}
-			
+
 		}
 
 		return 0;

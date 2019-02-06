@@ -11,7 +11,7 @@ int main(void){
     float x0,fx0,fx1,x1,error;
 
     printf("Enter value of x0: ");
-    scanf("%d",&x0);
+    scanf("%f",&x0);
 
     
 
