@@ -13,8 +13,6 @@ int main(void){
     printf("Enter value of x0: ");
     scanf("%f",&x0);
 
-    
-
     start:
         count++;
 

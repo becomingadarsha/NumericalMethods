@@ -24,7 +24,7 @@ int main(void){
         error=fabs((x2-x1)/x2);
 
         x0=x1;
-        fx0= fx1;
+      
         x1=x2;
         
 

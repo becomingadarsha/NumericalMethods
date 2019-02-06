@@ -2,13 +2,14 @@
 
 #include<stdio.h>
 #include<math.h>
-int fact(int);
+float fact(int);
 
 int main(void)
 {
     int i,j,n;
-    float xp, h, s,v,p,k;
+    float xp, h, s,p,k;
     float x[30],fx[30],fd[30];
+    float v;
 
     printf("How many elements ? ");
     scanf("%d",&n);
@@ -57,20 +58,21 @@ int main(void)
 
     }
     
-    printf(" At xp = %f , then interpolated value is %.3f",xp,v);
-
+    printf(" At xp = %f , then interpolated value is %.2f",xp,v);
 
 
 }
 
-int fact(int n)
+float fact(int n)
 {
+      float fac = 1;
     if( n== 0)
     {
         return 1;
     }
 
     else{
-        return(n* fact(n-1));
+        fac =(n* fact(n-1));
+        return fac;
     }
 }
